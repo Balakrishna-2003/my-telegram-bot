@@ -19,7 +19,7 @@ app.post("/new-message", function(req, res) {
 	const { message } = req.body
 	console.log("i am here");
 	console.log({ message });
-	res.send(message);
+	res.send("here "+message);
 	
 	//Each message contains "text" and a "chat" object, which has an "id" which is the chat id
 
